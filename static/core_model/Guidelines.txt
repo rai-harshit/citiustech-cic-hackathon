@@ -1,0 +1,9 @@
+1: Download the weights for the Pre-trained YoloV3 Object Detection Model from the following link:
+https://pjreddie.com/media/files/yolov3.weights.
+Note: The weight file is about 238MB in size.
+
+2: Once downloaded, run the following command to convert the .weights file to keras-supported .h5 file:
+python convert.py yolov3.cfg yolov3.weights model_data/yolo.h5
+
+3: After this, you can use test the model by running the command:
+python yolo_video.py --image

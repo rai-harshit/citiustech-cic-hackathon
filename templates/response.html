@@ -1,0 +1,12 @@
+<script type="text/javascript">
+  $.ajax({
+    type: "GET",
+    timeout: 50000,
+    url: "../index.html",
+    data: "The data received",
+    success: function (data) {
+        alert('success');
+        return false;
+    }
+    });
+</script>
